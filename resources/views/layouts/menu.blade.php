@@ -10,3 +10,7 @@
     <a href="{!! route('contatos.index') !!}"><i class="fa fa-edit"></i><span>Contatos</span></a>
 </li>
 
+<li class="{{ Request::is('trabalhoERendas*') ? 'active' : '' }}">
+    <a href="{!! route('trabalhoERendas.index') !!}"><i class="fa fa-edit"></i><span>Trabalho E Rendas</span></a>
+</li>
+
