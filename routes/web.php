@@ -27,3 +27,5 @@ Route::resource('enderecos', 'EnderecoController');
 Route::resource('contatos', 'ContatoController');
 
 Route::resource('trabalhoERendas', 'TrabalhoERendaController');
+
+Route::resource('dadosFamiliares', 'DadosFamiliareController');

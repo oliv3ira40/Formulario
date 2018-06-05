@@ -14,3 +14,7 @@
     <a href="{!! route('trabalhoERendas.index') !!}"><i class="fa fa-edit"></i><span>Trabalho E Rendas</span></a>
 </li>
 
+<li class="{{ Request::is('dadosFamiliares*') ? 'active' : '' }}">
+    <a href="{!! route('dadosFamiliares.index') !!}"><i class="fa fa-edit"></i><span>Dados Familiares</span></a>
+</li>
+
