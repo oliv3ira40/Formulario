@@ -57,6 +57,8 @@ class PessoaController extends AppBaseController
     {
         $input = $request->all();
 
+        dd($input);
+
         $pessoa = $this->pessoaRepository->create($input);
 
         Flash::success('Pessoa saved successfully.');

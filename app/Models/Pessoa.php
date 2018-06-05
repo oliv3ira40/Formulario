@@ -96,7 +96,6 @@ class Pessoa extends Model
      */
     public static $rules = [
         'cpf' => 'required',
-        'cpfCompanheiro' => 'exit'
     ];
 
     

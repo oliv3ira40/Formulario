@@ -1,35 +1,29 @@
 <!-- Pessoa Id Field -->
-<div class="form-group col-sm-6">
+{{-- <div class="form-group col-sm-3">
     {!! Form::label('pessoa_id', 'Pessoa Id:') !!}
     {!! Form::text('pessoa_id', null, ['class' => 'form-control']) !!}
-</div>
+</div> --}}
 
 <!-- Telefonefixo Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('telefoneFixo', 'Telefonefixo:') !!}
+<div class="form-group col-sm-3">
+    {!! Form::label('telefoneFixo', '2.7 Telefone Fixo') !!}
     {!! Form::text('telefoneFixo', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Telefonecelular Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('telefoneCelular', 'Telefonecelular:') !!}
+<div class="form-group col-sm-3">
+    {!! Form::label('telefoneCelular', '2.8 Telefone Celular') !!}
     {!! Form::text('telefoneCelular', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Telefonerecado Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('telefoneRecado', 'Telefonerecado:') !!}
+<div class="form-group col-sm-3">
+    {!! Form::label('telefoneRecado', '2.9 Telefone para Recado') !!}
     {!! Form::text('telefoneRecado', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Email Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('email', 'Email:') !!}
+<div class="form-group col-sm-3">
+    {!! Form::label('email', '2.10 E-mail') !!}
     {!! Form::text('email', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('contatos.index') !!}" class="btn btn-default">Cancel</a>
 </div>
