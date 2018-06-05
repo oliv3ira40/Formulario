@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use App\Models\SexoOption;
+use App\Models\UfOption;
+use App\Models\EstadoCivilOption;
+use App\Models\EscolaridadeOption;
 
 class PessoaController extends AppBaseController
 {
@@ -43,7 +47,28 @@ class PessoaController extends AppBaseController
      */
     public function create()
     {
-        return view('pessoas.create');
+        $escolaridadeOptions = EscolaridadeOption::all();
+        $estadoCivilOptions = EstadoCivilOption::all();
+        $sexoOptions = SexoOption::all();
+        $ufsOptions = UfOption::all();
+        
+        foreach ($escolaridadeOptions as $option) {
+            $escolaridadeOption[$option['value']] = $option['value'];
+        }
+        unset($option);
+        foreach ($estadoCivilOptions as $option) {
+            $estadoCivilOption[$option['value']] = $option['value'];
+        }
+        unset($option);
+        foreach ($sexoOptions as $option) {
+            $sexoOption[$option['value']] = $option['value'];
+        }
+        unset($option);
+        foreach ($ufsOptions as $option) {
+            $ufsOption[$option['value']] = $option['value'];
+        }
+
+        return view('pessoas.create', compact('escolaridadeOption', 'estadoCivilOption', 'sexoOption', 'ufsOption'));
     }
 
     /**
@@ -56,7 +81,6 @@ class PessoaController extends AppBaseController
     public function store(CreatePessoaRequest $request)
     {
         $input = $request->all();
-
         dd($input);
 
         $pessoa = $this->pessoaRepository->create($input);

@@ -31,3 +31,21 @@ Route::resource('trabalhoERendas', 'TrabalhoERendaController');
 Route::resource('dadosFamiliares', 'DadosFamiliareController');
 
 Route::resource('moradias', 'MoradiaController');
+
+Route::resource('sexoOptions', 'SexoOptionController');
+
+Route::resource('ufOptions', 'UfOptionController');
+
+Route::resource('nacionalidadeOptions', 'NacionalidadeOptionController');
+
+Route::resource('estadoCivilOptions', 'EstadoCivilOptionController');
+
+Route::resource('escolaridadeOptions', 'EscolaridadeOptionController');
+
+Route::resource('relacaoAosFilhosOptions', 'relacaoAosFilhosOptionController');
+
+Route::resource('comQuemResideOptions', 'comQuemResideOptionController');
+
+Route::resource('tipoDaDeficienciaOptions', 'tipoDaDeficienciaOptionController');
+
+Route::resource('doencaCronicaOptions', 'doencaCronicaOptionController');

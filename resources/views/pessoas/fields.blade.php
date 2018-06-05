@@ -28,7 +28,7 @@
         <!-- Ufemissaorg Field -->
         <div class="form-group col-sm-3">
             {!! Form::label('ufEmissaoRg', '1.5 UF') !!}
-            {!! Form::select('ufEmissaoRg', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('ufEmissaoRg', $ufsOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Orgaoemissorrg Field -->
         <div class="form-group col-sm-3">
@@ -43,12 +43,12 @@
         <!-- Ufnascimento Field -->
         <div class="form-group col-sm-3">
             {!! Form::label('ufNascimento', '1.8 UF') !!}
-            {!! Form::select('ufNascimento', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('ufNascimento', $ufsOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Naturalidade Field -->
         <div class="form-group col-sm-5">
             {!! Form::label('naturalidade', '1.9 Naturalidade') !!}
-            {!! Form::select('naturalidade', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('naturalidade', $ufsOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Nacionalidade Field -->
         <div class="form-group col-sm-3">
@@ -58,17 +58,17 @@
         <!-- Sexo Field -->
         <div class="form-group col-sm-2">
             {!! Form::label('sexo', '1.11 Sexo') !!}
-            {!! Form::select('sexo', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('sexo', $sexoOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Estadocivil Field -->
         <div class="form-group col-sm-3">
             {!! Form::label('estadoCivil', '1.12 Estado Civil') !!}
-            {!! Form::select('estadoCivil', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('estadoCivil', $estadoCivilOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Escolaridade Field -->
         <div class="form-group col-sm-4">
             {!! Form::label('escolaridade', '1.13 Escolaridade') !!}
-            {!! Form::select('escolaridade', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::select('escolaridade', $escolaridadeOption, null, ['class' => 'form-control']) !!}
         </div>
         <!-- Carteiraprofissional Field -->
         <div class="form-group col-sm-5">

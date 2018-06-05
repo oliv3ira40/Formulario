@@ -38,7 +38,7 @@
         <!-- Cidade Field -->
         <div class="form-group col-sm-6">
             {!! Form::label('cidade', '2.6 Cidade') !!}
-            {!! Form::select('cidade', ["Opções"], null, ['class' => 'form-control']) !!}
+            {!! Form::text('cidade', null, ['class' => 'form-control']) !!}
         </div>
         @include('contatos.fields')
     </div>
