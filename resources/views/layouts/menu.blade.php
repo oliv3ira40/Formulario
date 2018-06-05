@@ -18,3 +18,7 @@
     <a href="{!! route('dadosFamiliares.index') !!}"><i class="fa fa-edit"></i><span>Dados Familiares</span></a>
 </li>
 
+<li class="{{ Request::is('moradias*') ? 'active' : '' }}">
+    <a href="{!! route('moradias.index') !!}"><i class="fa fa-edit"></i><span>Moradias</span></a>
+</li>
+
