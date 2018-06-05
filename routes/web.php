@@ -23,3 +23,5 @@ Route::get('/home', 'HomeController@index');
 Route::resource('pessoas', 'PessoaController');
 
 Route::resource('enderecos', 'EnderecoController');
+
+Route::resource('contatos', 'ContatoController');

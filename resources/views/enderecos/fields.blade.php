@@ -31,13 +31,13 @@
 <!-- Estado Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('estado', 'Estado:') !!}
-    {!! Form::select('estado', ], null, ['class' => 'form-control']) !!}
+    {!! Form::select('estado', ["Opções"], null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Cidade Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('cidade', 'Cidade:') !!}
-    {!! Form::select('cidade', ], null, ['class' => 'form-control']) !!}
+    {!! Form::select('cidade', ["Opções"], null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->
